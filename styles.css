@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "main";
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+.background {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    background-color: #f5d04f;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 10px grey;
+}
+
+.container {
+    width: 20%;
+    height: 60%;
+    padding: 1rem;
+    background-color: white;
+    border: solid black;
+    box-shadow: 3px 5px 10px black;
+}
+
+.illustration-article {
+    width: 100%;
+    max-height: 35%;
+    object-fit: cover;
+} 
+
+.tag {
+    /* display: inline; */
+    font-family: 'main';
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #f5d04f;
+    padding: .125rem .25rem;
+    border-radius: 10%;
+}
+
+.publish-date {
+    font-family: 'main';
+    font-size: 16px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 500;
+}
+
+.title {
+    font-family: 'main';
+}
+
+.description {
+    font-family: 'main';
+    color: hsl(0, 0%, 42%);
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+}
+
+.author-name {
+    font-family: 'main';
+    font-weight: 500;
+    margin: 1rem;
+}
