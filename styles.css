@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "main";
     src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
@@ -11,25 +17,34 @@
     justify-content: center;
     align-items: center;
     box-shadow: 3px 5px 10px grey;
+    overflow: scroll;
 }
 
 .container {
-    width: max(20%, 380px);
-    height: 60%;
+    width: max(20%, 400px);
+    height: max(60%, 500px);
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    /* margin: 1rem; */
     background-color: white;
     border: solid black;
     box-shadow: 3px 5px 10px black;
+    overflow: hidden;
 }
 
 .illustration-article {
-    width: 100%;
+    /* width: 100%; */
+    /* margin: 1rem; */
+    /* border: 1px solid black; */
+    /* padding: 1rem; */
     max-height: 35%;
     object-fit: cover;
 } 
 
 .tag {
-    /* display: inline; */
+    width: fit-content;
+    margin-block: 1rem;
     font-family: 'main';
     font-weight: 600;
     font-size: 16px;
@@ -56,8 +71,19 @@
 
 .author-container {
     display: flex;
+    margin-top: auto;
+    /* height: 5%; */
+    /* margin: 1rem; */
+    /* gap: 1rem; */
+    /* height: 1rem; */
+    
     align-items: center;
 }
+
+.author-container img {
+    height: 2rem;
+}
+
 
 .author-name {
     font-family: 'main';
